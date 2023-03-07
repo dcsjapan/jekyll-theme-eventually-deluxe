@@ -30,7 +30,7 @@ image_source:  /assets/images/  # (You may specify an external server as an abso
 # The default format for dates displayed by the site.
 date_format:   "%B %d, %Y"
 
-# The string that delimits the end of post exerpts.
+# The string that delimits the end of post excerpts.
 excerpt_separator:  <!--end_excerpt-->
 
 
@@ -49,7 +49,7 @@ tagline:          A shorter description of the site
 ### THEME SETTINGS
 
 # This enables use of the Eventually Deluxe theme.
-theme:         jekyll-theme-eventually-deluxe
+theme:           jekyll-theme-eventually-deluxe
 
 # Use the settings below to customize the background image slideshow.
 slideshow:
@@ -62,10 +62,10 @@ slideshow:
     # The alignment may be "left", "center", or "right"; defaults to 'center'.
     - filename:  eventually/bg01.jpg
       alignment: center
-    
+
     - filename:  eventually/bg02.jpg
       alignment: center
-    
+
     - filename:  eventually/bg03.jpg
       alignment: center
 
@@ -140,6 +140,9 @@ contact:
       link:  "#"
 
     - type:  linkedin
+      link:  "#"
+
+    - type:  mastodon
       link:  "#"
 
     - type:  pinterest

@@ -26,6 +26,10 @@ linkedin:
   label: LinkedIn
   type:  brands fa-linkedin
 
+mastodon:
+  label: Mastodon
+  type:  brands fa-mastodon
+
 pinterest:
   label: Pinterest
   type:  brands fa-pinterest
