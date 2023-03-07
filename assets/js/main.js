@@ -118,6 +118,7 @@
 
 		})();
 
+	{% if site.signup_form == true %}
 	// Signup Form.
 		(function() {
 
@@ -184,5 +185,6 @@
 				});
 
 		})();
+	{% endif %}
 
 })();

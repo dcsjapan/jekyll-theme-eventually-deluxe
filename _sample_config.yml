@@ -51,6 +51,10 @@ tagline:          A shorter description of the site
 # This enables use of the Eventually Deluxe theme.
 theme:           jekyll-theme-eventually-deluxe
 
+# This enables use of the signup form; leave blank to disable.
+# NOTE: The signup form won't do anything unless the JS is modified to specify handling.
+signup-form:     true
+
 # Use the settings below to customize the background image slideshow.
 slideshow:
 
