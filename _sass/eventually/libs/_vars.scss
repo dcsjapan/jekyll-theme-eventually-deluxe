@@ -1,0 +1,23 @@
+// Misc.
+	$misc: (
+	);
+
+// Duration.
+	$duration: (
+		nav:				0.5s,
+		transition:			0.2s,
+		bg-fadein:			2s,
+		bg-transition:		3s,
+		bg-slide:			45s // (lower = faster, higher = slower)
+	);
+
+// Size.
+	$size: (
+		border-radius:		6px,
+		border-width:		2px,
+		element-height:		2.75em,
+		element-margin:		2em
+	);
+
+// Font and palette settings moved to main.scss to allow configuration.
+

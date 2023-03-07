@@ -1,0 +1,60 @@
+---
+---
+// Importing SASS variables...
+  @import 'eventually/libs/vars';
+
+// Setting font variables...
+	$font: (
+		family:				({{ site.font.family | default: "'Roboto', sans-serif" }}),
+		family-fixed:		('Courier New', monospace),
+		weight:				{{ site.font.weight.normal | default: 400 }},
+		weight-bold:		{{ site.font.weight.bold | default: 700 }},
+	);
+
+// Setting palette variables...
+	$palette: (
+		bg:					{{ site.colors.body }},
+		fg:					rgba({{ site.colors.text }}, 0.75),
+		fg-bold:			{{ site.colors.text }},
+		fg-light:			rgba({{ site.colors.text }}, 0.5),
+		border:				rgba({{ site.colors.border }}, 0.35),
+		border-bg:			rgba({{ site.colors.border }}, 0.125),
+		border2:			rgba({{ site.colors.border }}, 0.25),
+	
+		accent: (
+			bg:				{{ site.colors.accent }},
+			fg:				mix({{ site.colors.accent }}, #ffffff, 25%),
+			fg-bold:		#ffffff,
+			fg-light:		mix({{ site.colors.accent }}, #ffffff, 40%),
+			border:			rgba({{ site.colors.border }}, 0.25),
+			border-bg:		rgba({{ site.colors.border }}, 0.075),
+		),
+	
+		positive: (
+			bg:				{{ site.colors.accent }},
+			fg:				#ffffff
+		),
+	
+		negative: (
+			bg:				#ff2361,
+			fg:				#ffffff
+		)
+	);
+
+// Importing SASS libraries...
+
+@import 'eventually/libs/functions';
+@import 'eventually/libs/mixins';
+@import 'eventually/libs/vendor';
+@import 'eventually/libs/breakpoints';
+
+
+// Setting site webfont selection as configured...
+{% assign font_url = site.webfont_url | default: 'https://fonts.googleapis.com/css?family=Roboto:400,700' %}
+  @import url('{{ font_url }}');
+{% if site.use_fa_fonts %}
+  @import "{{ '/assets/css/fontawesome-all.min.css' | relative_url }}";
+{% endif %}
+
+// Importing main Eventually styles...
+@import 'eventually-main';

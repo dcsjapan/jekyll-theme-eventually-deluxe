@@ -1,0 +1,165 @@
+#	Eventually Deluxe for Jekyll (https://github.com/dcsjapan/jekyll-theme-eventually-deluxe)
+#	by Dominion (https://www.dcsjapan.com)
+#	Free for personal and commercial use under CC-BY-3.0 (https://creativecommons.org/licenses/by/3.0/)
+#
+#	Based on Eventually (https://html5up.net/eventually)
+#	by HTML5 UP (https://html5up.net | @ajlkn)
+#	Free for personal and commercial use under CC-BY-3.0 (https://html5up.net/license)
+
+
+### SITE SETTINGS
+
+# The title of your site; used in title tags and <h1> headers. Defaults to "Eventually Deluxe".
+title:         Site Title
+
+# The site description; used in site description meta tags.
+description:   A detailed description of what visitors can expect to find in the site
+
+# The default language for all pages in the site; defaults to "en".
+lang:          en
+
+# The base protocol and hostname for your site, e.g. "http://example.com".
+url:           ""
+
+# The subpath for a site that isn't in the web root, e.g. "/blog".
+baseurl:       ""
+
+# The path where image files are stored; defaults to '/assets/images/'.
+image_source:  /assets/images/  # (You may specify an external server as an absolute URL.)
+
+# The default format for dates displayed by the site.
+date_format:   "%B %d, %Y"
+
+# The string that delimits the end of post exerpts.
+excerpt_separator:  <!--end_excerpt-->
+
+
+### TITLE TAG SETTINGS
+
+# The order in which the site and page titles should be shown in title tags.
+title_sequence:   page  # Enter "site" to show the site title first; defaults to "page".
+
+# The string to separate the site and page titles in the title tag; defaults to "|".
+title_separator:  " | "
+
+# A short desccription for use in title tag when page title is empty; defaults to null.
+tagline:          A shorter description of the site
+
+
+### THEME SETTINGS
+
+# This enables use of the Eventually Deluxe theme.
+theme:         jekyll-theme-eventually-deluxe
+
+# Use the settings below to customize the background image slideshow.
+slideshow:
+
+  # The images to be displayed by the slideshow:
+  images:
+
+    # Add a 'filename' and an 'alignment' for each image to be displayed in the slideshow.
+    # The filename should be a path relative to 'site.image_source' (see above).
+    # The alignment may be "left", "center", or "right"; defaults to 'center'.
+    - filename:  eventually/bg01.jpg
+      alignment: center
+    
+    - filename:  eventually/bg02.jpg
+      alignment: center
+    
+    - filename:  eventually/bg03.jpg
+      alignment: center
+
+  # The amount of time to wait (in milliseconds) between transitions; defaults to "6000".
+  # NOTE: This must be at least twice as long as the transition speed (3000 milliseconds). 
+  delay:         6000
+
+# Use the settings below customize your site's fonts.
+font:
+
+  # The font family to use; defaults to "'Roboto', sans-serif".
+  family:      "'Roboto', sans-serif"
+
+  # The font weights to use:
+  weight:
+
+    # The font weight for normal text; defaults to 400.
+    normal:    400
+
+    # The font weight for bold text; defaults to 'Roboto', sans-serif00.
+    bold:      700
+
+# The URL for the webfonts to use for the site; defaults to Roboto from Google.
+    webfonts_url:  "https://fonts.googleapis.com/css?family=Roboto:400,700"
+
+# This enables loading of Font Awesome icon fonts; leave blank to disable.
+use_fa_fonts:  true  # NOTE: Must be enabled to show social media icons in the footer.
+
+# Use the settings below to customize your site's colors. (NOTE: HEX VALUES MUST BE IN QUOTES!)
+colors:
+
+  # The webpage background color; defaults to "#000000".
+  body:        "#000000"
+
+  # The color of unaccented text; defaults to "#ffffff".
+  text:        "#ffffff"
+
+  # The accent color for links and buttons; defaults to "#1cb495".
+  accent:      "#1cb495"
+
+  # The border color; defaults to "#ffffff".
+  border:      "#ffffff"
+
+
+### SITE OWNER SETTINGS
+
+# The name to display in the copyright notice in the site footer.
+owner:       Your Name Here
+
+# Use the settings below to display contact links in the site footer.
+contact:
+
+  # Add a 'type' and a 'link' for each social media account to be displayed.
+  accounts:
+
+    - type:  dribbble
+      link:  "#"
+
+    - type:  facebook
+      link:  "#"
+
+    - type:  flickr
+      link:  "#"
+
+    - type:  github
+      link:  "#"
+
+    - type:  gitlab
+      link:  "#"
+
+    - type:  instagram
+      link:  "#"
+
+    - type:  linkedin
+      link:  "#"
+
+    - type:  pinterest
+      link:  "#"
+
+    - type:  slack
+      link:  "#"
+
+    - type:  twitter
+      link:  "#"
+
+  # The contact email address for the site. This will also be displayed as a link.
+  email:     "nobody@example.com"
+
+  # This enables the display of contact links in the footer; leave blank to disable.
+  # NOTE: Links will be displayed as text if 'site.use_fa_fonts' is disabled.
+  links:     true
+
+
+### BUILD SETTINGS
+
+sass:
+  style: compressed

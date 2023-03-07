@@ -4,13 +4,13 @@ Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-eventually-deluxe"
   spec.version       = "0.1.0"
   spec.authors       = ["Dominion"]
-  spec.email         = ["dcsjapan@users.noreply.github.com"]
+  spec.email         = ["dcsjapan@outlook.com"]
 
-  spec.summary       = "TODO: Write a short summary, because Rubygems requires one."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "MIT"
+  spec.summary       = "A Jekyll theme adapted from the Eventually site template by HTML5 UP"
+  spec.homepage      = "https://github.com/dcsjapan/jekyll-theme-eventually-deluxe"
+  spec.license       = "CC-BY-3.0"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|_data|LICENSE|README|_sample_config\.yml)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 4.2"
 end

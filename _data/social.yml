@@ -1,0 +1,43 @@
+dribbble:
+  label: Dribbble
+  type:  brands fa-dribbble
+
+facebook:
+  label: Facebook
+  type:  brands fa-facebook
+
+flickr:
+  label: Flickr
+  type:  brands fa-flickr
+
+github:
+  label: GitHub
+  type:  brands fa-github
+
+gitlab:
+  label: GitLab
+  type:  brands fa-gitlab
+
+instagram:
+  label: Instagram
+  type:  brands fa-instagram
+
+linkedin:
+  label: LinkedIn
+  type:  brands fa-linkedin
+
+pinterest:
+  label: Pinterest
+  type:  brands fa-pinterest
+
+slack:
+  label: Slack
+  type:  brands fa-slack
+
+twitter:
+  label: Twitter
+  type:  brands fa-twitter
+
+email:
+  label: E-mail
+  type:  solid fa-envelope

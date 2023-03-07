@@ -1,0 +1,24 @@
+		<!-- Footer -->
+		<footer id="footer">
+  		{% if site.contact.links %}
+			<ul class="icons">
+	  		{% for account in site.contact.accounts %}
+				{%- if account.link -%}
+				{% assign icon = account.type %}
+		  		<li><a href="{{ account.link }}"{%- if site.use_fa_fonts -%} class="icon {{ site.data.social[icon].type }}"{%- endif -%}><span class="label">{{ site.data.social[icon].label }}</span></a></li>
+				{%- endif -%}
+	  		{%- endfor -%}
+	  		{%- if site.contact.email -%}
+				{% assign icon = 'email' %}
+				<li><a href="mailto:{{ site.contact.email }}"{%- if site.use_fa_fonts -%}  class="icon {{ site.data.social[icon].type }}"{%- endif -%}><span class="label">{{ site.data.social[icon].label }}</span></a></li>
+			{% endif %}
+			</ul>
+		{% endif %}
+		
+			<ul class="copyright">
+				<li>&copy; {{ site.owner }}. All rights reserved.</li>
+				<li><a href="https://html5up.net/eventually">Eventually</a> by <a href="https://html5up.net">HTML5 UP</a></li>
+				<li>Adapted for <a href="https://jekyllrb.com">Jekyll</a> by <a href="https://github.com/dcsjapan">Dominion</a></li>
+			</ul>
+
+		</footer>

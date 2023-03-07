@@ -1,10 +1,8 @@
 # jekyll-theme-eventually-deluxe
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+A Jekyll theme adapted from the Eventually site template by HTML5 UP.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+Caution: This is a work in progress. This readme will be updated when the theme is ready to use.
 
 
 ## Installation

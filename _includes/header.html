@@ -1,0 +1,10 @@
+		<!-- Header -->
+		<header id="header">
+			<h1>{{ page.heading | default: page.title }}</h1>
+			<p>{{ page.subtitle }}</p>
+			{%- if site.data.buttons[page.layout].primary -%}
+			<form>
+				<a href="{{ site.data.buttons[page.layout].primary.link | relative_url }}" class="button">{{ site.data.buttons[page.layout].primary.text }}</a>
+			</form>
+			{% endif %}
+		</header>
