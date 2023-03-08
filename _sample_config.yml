@@ -113,6 +113,9 @@ colors:
   # The border color; defaults to "#ffffff".
   border:      "#ffffff"
 
+# The filename of your custom CSS file; Jekyll will look for this in the '/assets/css/' directory.
+custom_css:    
+
 
 ### SITE OWNER SETTINGS
 
