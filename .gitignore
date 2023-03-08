@@ -1,9 +1,9 @@
-*.gem
-.bundle
-.gitignore
-.jekyll-cache
-.sass-cache
 _config.yml
 _site
+.bundle
+.jekyll-cache
+.sass-cache
+*.gem
 demo_images
 Gemfile.lock
+vendor
