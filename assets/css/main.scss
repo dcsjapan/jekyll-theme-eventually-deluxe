@@ -13,25 +13,25 @@
 
 // Setting palette variables...
 	$palette: (
-		bg:					{{ site.colors.body }},
-		fg:					rgba({{ site.colors.text }}, 0.75),
-		fg-bold:			{{ site.colors.text }},
-		fg-light:			rgba({{ site.colors.text }}, 0.5),
-		border:				rgba({{ site.colors.border }}, 0.35),
-		border-bg:			rgba({{ site.colors.border }}, 0.125),
-		border2:			rgba({{ site.colors.border }}, 0.25),
+		bg:					{{ site.colors.body | default: '#000000' }},
+		fg:					rgba({{ site.colors.text | default: '#ffffff' }}, 0.75),
+		fg-bold:			{{ site.colors.text | default: '#ffffff' }},
+		fg-light:			rgba({{ site.colors.text | default: '#ffffff' }}, 0.5),
+		border:				rgba({{ site.colors.border | default: '#ffffff' }}, 0.35),
+		border-bg:			rgba({{ site.colors.border | default: '#ffffff' }}, 0.125),
+		border2:			rgba({{ site.colors.border | default: '#ffffff' }}, 0.25),
 	
 		accent: (
-			bg:				{{ site.colors.accent }},
-			fg:				mix({{ site.colors.accent }}, #ffffff, 25%),
+			bg:				{{ site.colors.accent | default: '#1cb495' }},
+			fg:				mix({{ site.colors.accent | default: '#1cb495' }}, #ffffff, 25%),
 			fg-bold:		#ffffff,
-			fg-light:		mix({{ site.colors.accent }}, #ffffff, 40%),
-			border:			rgba({{ site.colors.border }}, 0.25),
-			border-bg:		rgba({{ site.colors.border }}, 0.075),
+			fg-light:		mix({{ site.colors.accent | default: '#1cb495' }}, #ffffff, 40%),
+			border:			rgba({{ site.colors.border | default: '#ffffff' }}, 0.25),
+			border-bg:		rgba({{ site.colors.border | default: '#ffffff' }}, 0.075),
 		),
 	
 		positive: (
-			bg:				{{ site.colors.accent }},
+			bg:				{{ site.colors.accent | default: '#1cb495' }},
 			fg:				#ffffff
 		),
 	
