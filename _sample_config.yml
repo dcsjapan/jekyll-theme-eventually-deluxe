@@ -168,8 +168,15 @@ contact:
   # NOTE: Links will be displayed as text if 'site.use_fa_fonts' is disabled.
   links:     true
 
+# Credits to be displayed after the copyright notice in the footer.
+credits:
+
+  - <a href="https://html5up.net/eventually">Eventually</a> by <a href="https://html5up.net">HTML5 UP</a>
+
+  - Adapted for <a href="https://jekyllrb.com">Jekyll</a> by <a href="https://github.com/dcsjapan">Dominion</a>
+
 
 ### BUILD SETTINGS
 
 sass:
-  style: compressed
+  style:     compressed

@@ -4,10 +4,4 @@ layout: default
 
 {{ content }}
 
-		{% if site.signup_form == true %}
-		<!-- Signup Form -->
-		<form id="signup-form" method="post" action="#">
-			<input type="email" name="email" id="email" placeholder="{{ site.data.signup-form.email }}" />
-			<input type="submit" value="{{ site.data.signup-form.submit }}" />
-		</form>
-		{% endif %}
+{% include signup-form.html %}

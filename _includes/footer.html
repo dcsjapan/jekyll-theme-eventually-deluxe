@@ -16,9 +16,10 @@
 		{% endif %}
 		
 			<ul class="copyright">
-				<li>&copy; {{ site.owner }}. All rights reserved.</li>
-				<li><a href="https://html5up.net/eventually">Eventually</a> by <a href="https://html5up.net">HTML5 UP</a></li>
-				<li>Adapted for <a href="https://jekyllrb.com">Jekyll</a> by <a href="https://github.com/dcsjapan">Dominion</a></li>
+				<li>Copyright &copy; {{ 'now' | date: "%Y" }} {{ site.owner }}</li>
+				{% for credit in site.credits %}
+				<li>{{ credit }}</li>
+				{% endfor %}
 			</ul>
 
 		</footer>
