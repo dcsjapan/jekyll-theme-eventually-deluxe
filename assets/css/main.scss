@@ -1,7 +1,7 @@
 ---
 ---
 // Importing SASS variables...
-  @import 'eventually/libs/vars';
+@import 'eventually/libs/vars';
 
 // Setting font variables...
 	$font: (
@@ -51,9 +51,9 @@
 
 // Setting site webfont selection as configured...
 {% assign font_url = site.webfont_url | default: 'https://fonts.googleapis.com/css?family=Roboto:400,700' %}
-  @import url('{{ font_url }}');
+@import url('{{ font_url }}');
 {% if site.use_fa_fonts %}
-  @import "{{ '/assets/css/fontawesome-all.min.css' | relative_url }}";
+@import "{{ '/assets/css/fontawesome-all.min.css' | relative_url }}";
 {% endif %}
 
 // Importing main Eventually styles...
