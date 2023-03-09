@@ -25,6 +25,7 @@ url:           ""
 baseurl:       ""
 
 # The path where image files are stored; defaults to '/assets/images/'.
+# NOTE: Set this to "/demo/images/" to see the images included in the demo.
 image_source:  /demo/images/  # (You may specify an external server as an absolute URL.)
 
 # The default format for dates displayed by the site.
@@ -63,14 +64,15 @@ slideshow:
 
     # Add a 'filename' and an 'alignment' for each image to be displayed in the slideshow.
     # The filename should be a path relative to 'site.image_source' (see above).
-    # The alignment may be "left", "center", or "right"; defaults to 'center'.
-    - filename:  eventually/bg01.jpg
+    # The alignment may be "left", "center", or "right"; defaults to "center".
+	# NOTE: Use the following settings to render the images for the demo site.
+    - filename:  bg01.jpg
       alignment: center
 
-    - filename:  eventually/bg02.jpg
+    - filename:  bg02.jpg
       alignment: center
 
-    - filename:  eventually/bg03.jpg
+    - filename:  bg03.jpg
       alignment: center
 
   # The amount of time to wait (in milliseconds) between transitions; defaults to "6000".
@@ -185,6 +187,5 @@ sass:
 ### DEMO SITE BUILD SETTINGS
   
 # The following setting enables the demo site included with this theme gem.
-# NOTE: Set image_source to "/demo/images/" to see the images included in the demo.
 include:
   - demo

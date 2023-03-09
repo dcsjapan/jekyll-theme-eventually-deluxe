@@ -38,8 +38,7 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-					{%- assign image_src = site.image_source | default: '/assets/images/' -%}
-					{%- if site.slideshow.images -%}
+						{%- assign image_src = site.image_source | default: '/assets/images/' -%}
 						{%- assign array_count = 0 -%}
 						{%- assign image_count = 0 -%}
 						{%- for bg_image in site.slideshow.images -%}
@@ -51,11 +50,6 @@
 							{%- assign image_count = image_count | plus: 1 -%}
 							'{{ bg_image.filename | prepend: image_src | relative_url }}': '{{ bg_image.alignment | default: "center" }}'{%- unless image_count == array_count -%},{%- endunless -%}
 						{%- endfor -%}
-					{%- else -%}
-							'/assets/images/eventually/bg01.jpg': 'center',
-							'/assets/images/eventually/bg02.jpg': 'center',
-							'/assets/images/eventually/bg03.jpg': 'center'
-					{%- endif -%}
 						},
 
 					// Delay.
