@@ -4,8 +4,8 @@ _site
 .jekyll-cache
 .sass-cache
 *.gem
-demo_images
 Gemfile.lock
 vendor
 
+demo_images
 Makefile

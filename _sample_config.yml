@@ -25,7 +25,7 @@ url:           ""
 baseurl:       ""
 
 # The path where image files are stored; defaults to '/assets/images/'.
-image_source:  /assets/images/  # (You may specify an external server as an absolute URL.)
+image_source:  /demo/images/  # (You may specify an external server as an absolute URL.)
 
 # The default format for dates displayed by the site.
 date_format:   "%B %d, %Y"
@@ -89,7 +89,7 @@ font:
     # The font weight for normal text; defaults to 400.
     normal:    400
 
-    # The font weight for bold text; defaults to 'Roboto', sans-serif00.
+    # The font weight for bold text; defaults to 700.
     bold:      700
 
 # The URL for the webfonts to use for the site; defaults to Roboto from Google.
@@ -180,3 +180,11 @@ credits:
 
 sass:
   style:     compressed
+
+
+### DEMO SITE BUILD SETTINGS
+  
+# The following setting enables the demo site included with this theme gem.
+# NOTE: Set image_source to "/demo/images/" to see the images included in the demo.
+include:
+  - demo
