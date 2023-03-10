@@ -10,165 +10,167 @@
 ### SITE SETTINGS
 
 # The title of your site; used in title tags and <h1> headers. Defaults to "Eventually Deluxe".
-title:         Site Title
+title:             Site Title
 
 # The site description; used in site description meta tags.
-description:   A detailed description of what visitors can expect to find in the site
+description:       A detailed description of what visitors can expect to find in the site
 
 # The default language for all pages in the site; defaults to "en".
-lang:          en
+lang:              en
 
 # The base protocol and hostname for your site, e.g. "http://example.com".
-url:           ""
+url:               ""
 
 # The subpath for a site that isn't in the web root, e.g. "/blog".
-baseurl:       ""
+baseurl:           ""
 
 # The path where image files are stored; defaults to '/assets/images/'.
-# NOTE: Set this to "/demo/images/" to see the images included in the demo.
-image_source:  /demo/images/  # (You may specify an external server as an absolute URL.)
+# You may also specify an external server as an absolute URL.
+# NOTE: Set this to "/demo/images/" to see the images included in the demo site.
+image_source:      /demo/images/  
 
 # The default format for dates displayed by the site.
-date_format:   "%B %d, %Y"
+date_format:       "%B %d, %Y"
 
 # The string that delimits the end of post excerpts.
-excerpt_separator:  <!--end_excerpt-->
+excerpt_separator: <!--end_excerpt-->
 
 
 ### TITLE TAG SETTINGS
 
-# The order in which the site and page titles should be shown in title tags.
-title_sequence:   page  # Enter "site" to show the site title first; defaults to "page".
+# A short description for use in title tag when page.title is empty; defaults to null.
+tagline:           A Jekyll theme based on Eventually by HTML5 UP
 
-# The string to separate the site and page titles in the title tag; defaults to "|".
-title_separator:  " | "
+# The string between the site title and page title (or tagline) in the title tag; defaults to "|".
+title_separator:   " | "
 
-# A short desccription for use in title tag when page title is empty; defaults to null.
-tagline:          A shorter description of the site
+# Title tag sequence. Enter "site" to display the site title first; defaults to "page".
+title_sequence:    page  
 
 
 ### THEME SETTINGS
 
 # This enables use of the Eventually Deluxe theme.
-theme:           jekyll-theme-eventually-deluxe
+theme:             jekyll-theme-eventually-deluxe
 
-# This enables use of the signup form; leave blank to disable.
-# NOTE: The signup form won't do anything unless the JS is modified to specify handling.
-signup-form:     true
+# Theme colors (NOTE: Hex values must be in quotes!)
+colors:
 
-# Use the settings below to customize the background image slideshow.
+  # The webpage background color; defaults to "#000000".
+  body:            "#000000"
+
+  # The color of unaccented text; defaults to "#ffffff".
+  text:            "#ffffff"
+
+  # The accent color for links and buttons; defaults to "#1cb495".
+  accent:          "#1cb495"
+
+  # The border color; defaults to "#ffffff".
+  border:          "#ffffff"
+
+# Font settings
+font:
+
+  # The font family to use; defaults to "'Roboto', sans-serif".
+  family:          "'Roboto', sans-serif"
+
+  # Font weights
+  weight:
+
+    # The font weight for normal text; defaults to 400.
+    normal:        400
+
+    # The font weight for bold text; defaults to 700.
+    bold:          700
+
+# The URL for the webfonts to use for the site; defaults to Roboto from Google.
+webfonts_url:      "https://fonts.googleapis.com/css?family=Roboto:400,700"
+
+# This enables loading of Font Awesome icon fonts; leave blank to disable.
+# NOTE: This must be enabled to show the social media icons in the footer.
+use_fa_fonts:      true  
+
+# This enables display of the mailing list signup form; leave blank to disable.
+# NOTE: Currently the form won't do anything unless the JS is modified to specify handling.
+signup_form:       true
+
+# Background slideshow settings
 slideshow:
 
-  # The images to be displayed by the slideshow:
+  # Slideshow images
   images:
 
     # Add a 'filename' and an 'alignment' for each image to be displayed in the slideshow.
     # The filename should be a path relative to 'site.image_source' (see above).
     # The alignment may be "left", "center", or "right"; defaults to "center".
 	# NOTE: Use the following settings to render the images for the demo site.
-    - filename:  bg01.jpg
-      alignment: center
+    - filename:    bg01.jpg
+      alignment:   center
 
-    - filename:  bg02.jpg
-      alignment: center
+    - filename:    bg02.jpg
+      alignment:   center
 
-    - filename:  bg03.jpg
-      alignment: center
+    - filename:    bg03.jpg
+      alignment:   center
 
   # The amount of time to wait (in milliseconds) between transitions; defaults to "6000".
   # NOTE: This must be at least twice as long as the transition speed (3000 milliseconds). 
-  delay:         6000
-
-# Use the settings below customize your site's fonts.
-font:
-
-  # The font family to use; defaults to "'Roboto', sans-serif".
-  family:      "'Roboto', sans-serif"
-
-  # The font weights to use:
-  weight:
-
-    # The font weight for normal text; defaults to 400.
-    normal:    400
-
-    # The font weight for bold text; defaults to 700.
-    bold:      700
-
-# The URL for the webfonts to use for the site; defaults to Roboto from Google.
-    webfonts_url:  "https://fonts.googleapis.com/css?family=Roboto:400,700"
-
-# This enables loading of Font Awesome icon fonts; leave blank to disable.
-use_fa_fonts:  true  # NOTE: Must be enabled to show social media icons in the footer.
-
-# Use the settings below to customize your site's colors. (NOTE: HEX VALUES MUST BE IN QUOTES!)
-colors:
-
-  # The webpage background color; defaults to "#000000".
-  body:        "#000000"
-
-  # The color of unaccented text; defaults to "#ffffff".
-  text:        "#ffffff"
-
-  # The accent color for links and buttons; defaults to "#1cb495".
-  accent:      "#1cb495"
-
-  # The border color; defaults to "#ffffff".
-  border:      "#ffffff"
+  delay:           6000
 
 # The filename of your custom CSS file; Jekyll will look for this in the '/assets/css/' directory.
-custom_css:    
+custom_css:  
 
 
 ### SITE OWNER SETTINGS
 
 # The name to display in the copyright notice in the site footer.
-owner:       Your Name Here
+owner:             Your Name Here
 
-# Use the settings below to display contact links in the site footer.
+# Contact link settings
 contact:
 
-  # Add a 'type' and a 'link' for each social media account to be displayed.
+  # Social media account type and link URL settings. (Accounts without a URL will be omitted.)
   accounts:
 
-    - type:  dribbble
-      link:  "#"
+    - type:        dribbble
+      link:        "#"
 
-    - type:  facebook
-      link:  "#"
+    - type:        facebook
+      link:        "#"
 
-    - type:  flickr
-      link:  "#"
+    - type:        flickr
+      link:  
 
-    - type:  github
-      link:  "#"
+    - type:        github
+      link:        "#"
 
-    - type:  gitlab
-      link:  "#"
+    - type:        gitlab
+      link:  
 
-    - type:  instagram
-      link:  "#"
+    - type:        instagram
+      link:        "#"
 
-    - type:  linkedin
-      link:  "#"
+    - type:        linkedin
+      link:  
 
-    - type:  mastodon
-      link:  "#"
+    - type:        mastodon
+      link:        "#"
 
-    - type:  pinterest
-      link:  "#"
+    - type:        pinterest
+      link:  
 
-    - type:  slack
-      link:  "#"
+    - type:        slack
+      link:  
 
-    - type:  twitter
-      link:  "#"
+    - type:        twitter
+      link:        "#"
 
   # The contact email address for the site. This will also be displayed as a link.
-  email:     "nobody@example.com"
+  email:           "nobody@example.com"
 
   # This enables the display of contact links in the footer; leave blank to disable.
   # NOTE: Links will be displayed as text if 'site.use_fa_fonts' is disabled.
-  links:     true
+  links:           true
 
 # Credits to be displayed after the copyright notice in the footer.
 credits:
@@ -187,5 +189,6 @@ sass:
 ### DEMO SITE BUILD SETTINGS
   
 # The following setting enables the demo site included with this theme gem.
+# NOTE: Set image_source to "/demo/images/" to see the images included in the demo.
 include:
   - demo
