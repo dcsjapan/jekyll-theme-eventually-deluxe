@@ -38,13 +38,14 @@ excerpt_separator: <!--end_excerpt-->
 
 ### TITLE TAG SETTINGS
 
-# A short description for use in title tag when page.title is empty; defaults to null.
+# A short description for use in the title tag when the page title is absent; defaults to null.
 tagline:           A Jekyll theme based on Eventually by HTML5 UP
 
-# The string between the site title and page title (or tagline) in the title tag; defaults to "|".
+# The string between the site and page title (or tagline) in the title tag; defaults to " | ".
 title_separator:   " | "
 
 # Title tag sequence. Enter "site" to display the site title first; defaults to "page".
+# NOTE: When the page title is absent and a tagline is present, the tagline always comes last.
 title_sequence:    page  
 
 
